@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name STM32F4X-rescue)(type Legacy)(uri ${KIPRJMOD}/STM32F4X-rescue.lib)(options "")(descr ""))
+  (lib (name Stepper_driver_generic_breakout)(type Legacy)(uri ${KIPRJMOD}/Stepper_driver_generic_breakout.lib)(options "")(descr ""))
 )
