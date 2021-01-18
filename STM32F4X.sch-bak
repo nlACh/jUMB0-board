@@ -2824,4 +2824,75 @@ Text GLabel 6750 12100 0    50   Input ~ 0
 STEP
 Text GLabel 6750 12200 0    50   Input ~ 0
 DIR
+Text GLabel 12900 6100 2    50   Input ~ 0
+SPI2_SCK
+Text GLabel 12900 6200 2    50   Input ~ 0
+SPI2_CS
+Text GLabel 12900 6300 2    50   Input ~ 0
+SPI2_MOSI
+Text GLabel 12900 6700 2    50   Input ~ 0
+SPI2_MISO
+Text GLabel 6750 11700 0    50   Input ~ 0
+mMISO
+Text GLabel 6750 12400 0    50   Input ~ 0
+mMOSI
+Text GLabel 6750 12500 0    50   Input ~ 0
+mSCK
+$Comp
+L STM32F4X-rescue:GND1-power #PWR?
+U 1 1 6055B17B
+P 7350 13050
+F 0 "#PWR?" H 7350 12800 50  0001 C CNN
+F 1 "GND1" H 7355 12877 50  0000 C CNN
+F 2 "" H 7350 13050 50  0001 C CNN
+F 3 "" H 7350 13050 50  0001 C CNN
+	1    7350 13050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 12800 7350 12900
+Wire Wire Line
+	7450 12800 7450 12900
+Wire Wire Line
+	7450 12900 7350 12900
+Connection ~ 7350 12900
+Wire Wire Line
+	7350 12900 7350 13050
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 6059DFEA
+P 8400 12050
+F 0 "J?" H 8428 12026 50  0000 L CNN
+F 1 "Motor" H 8428 11935 50  0000 L CNN
+F 2 "" H 8400 12050 50  0001 C CNN
+F 3 "~" H 8400 12050 50  0001 C CNN
+	1    8400 12050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 11950 8200 11950
+Wire Wire Line
+	7950 12050 8200 12050
+Wire Wire Line
+	7950 12150 8200 12150
+Wire Wire Line
+	7950 12250 8200 12250
+Wire Wire Line
+	7950 11950 7950 11900
+Wire Wire Line
+	7950 11900 7750 11900
+Wire Wire Line
+	7750 12000 7950 12000
+Wire Wire Line
+	7950 12000 7950 12050
+Wire Wire Line
+	7950 12150 7950 12200
+Wire Wire Line
+	7950 12200 7750 12200
+Wire Wire Line
+	7750 12300 7950 12300
+Wire Wire Line
+	7950 12300 7950 12250
+Text GLabel 6750 12600 0    50   Input ~ 0
+CS
 $EndSCHEMATC
