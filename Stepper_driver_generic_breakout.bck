@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Motor_driver_generic_breakout
+D Pololu Breakout Board, Stepper Driver
+K Pololu Breakout Board Stepper Driver
+$ENDCMP
+#
 #End Doc Library

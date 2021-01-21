@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# GND1-power
+# GND1-power-STM32F4X-rescue
 #
-DEF GND1-power #PWR 0 0 Y Y 1 F P
+DEF GND1-power-STM32F4X-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND1-power" 0 -150 50 H V C CNN
+F1 "GND1-power-STM32F4X-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -14,11 +14,11 @@ X GND1 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# USBLC6-2SC6-Power_Protection
+# USBLC6-2SC6-Power_Protection-STM32F4X-rescue
 #
-DEF USBLC6-2SC6-Power_Protection U 0 0 Y Y 1 F N
+DEF USBLC6-2SC6-Power_Protection-STM32F4X-rescue U 0 0 Y Y 1 F N
 F0 "U" 200 350 50 H V C CNN
-F1 "USBLC6-2SC6-Power_Protection" 400 -400 50 H V C CNN
+F1 "USBLC6-2SC6-Power_Protection-STM32F4X-rescue" 400 -400 50 H V C CNN
 F2 "Package_TO_SOT_SMD:SOT-23-6" -750 400 50 H I C CNN
 F3 "" 200 350 50 H I C CNN
 $FPLIST
@@ -64,11 +64,11 @@ X IO1 6 -500 100 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# USB_B_Micro-Connector
+# USB_B_Micro-Connector-STM32F4X-rescue
 #
-DEF USB_B_Micro-Connector J 0 40 Y Y 1 F N
+DEF USB_B_Micro-Connector-STM32F4X-rescue J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "USB_B_Micro-Connector" -200 350 50 H V L CNN
+F1 "USB_B_Micro-Connector-STM32F4X-rescue" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 $FPLIST
