@@ -16,78 +16,78 @@ $EndDescr
 $Comp
 L power:+3V3 #PWR013
 U 1 1 5FF8CA22
-P 9400 950
-F 0 "#PWR013" H 9400 800 50  0001 C CNN
-F 1 "+3V3" H 9415 1123 50  0000 C CNN
-F 2 "" H 9400 950 50  0001 C CNN
-F 3 "" H 9400 950 50  0001 C CNN
-	1    9400 950 
+P 9000 1150
+F 0 "#PWR013" H 9000 1000 50  0001 C CNN
+F 1 "+3V3" H 9015 1323 50  0000 C CNN
+F 2 "" H 9000 1150 50  0001 C CNN
+F 3 "" H 9000 1150 50  0001 C CNN
+	1    9000 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9400 1200 9400 1100
-Connection ~ 9400 1100
+	9000 1400 9000 1300
+Connection ~ 9000 1300
 Wire Wire Line
-	9400 1100 9400 950 
+	9000 1300 9000 1150
 Wire Wire Line
-	9500 1200 9500 1100
-Connection ~ 9500 1100
+	9100 1400 9100 1300
+Connection ~ 9100 1300
 Wire Wire Line
-	9500 1100 9400 1100
+	9100 1300 9000 1300
 Wire Wire Line
-	9600 1200 9600 1100
-Connection ~ 9600 1100
+	9200 1400 9200 1300
+Connection ~ 9200 1300
 Wire Wire Line
-	9600 1100 9500 1100
+	9200 1300 9100 1300
 Wire Wire Line
-	9700 1200 9700 1100
-Connection ~ 9700 1100
+	9300 1400 9300 1300
+Connection ~ 9300 1300
 Wire Wire Line
-	9700 1100 9600 1100
+	9300 1300 9200 1300
 Wire Wire Line
-	9800 1200 9800 1100
-Connection ~ 9800 1100
+	9400 1400 9400 1300
+Connection ~ 9400 1300
 Wire Wire Line
-	9800 1100 9700 1100
+	9400 1300 9300 1300
 Wire Wire Line
-	9900 1200 9900 1100
+	9500 1400 9500 1300
 Wire Wire Line
-	9900 1100 9800 1100
+	9500 1300 9400 1300
 $Comp
 L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR014
 U 1 1 5FF8EAF0
-P 9500 6950
-F 0 "#PWR014" H 9500 6700 50  0001 C CNN
-F 1 "GND1" H 9505 6777 50  0000 C CNN
-F 2 "" H 9500 6950 50  0001 C CNN
-F 3 "" H 9500 6950 50  0001 C CNN
-	1    9500 6950
+P 9100 7150
+F 0 "#PWR014" H 9100 6900 50  0001 C CNN
+F 1 "GND1" H 9105 6977 50  0000 C CNN
+F 2 "" H 9100 7150 50  0001 C CNN
+F 3 "" H 9100 7150 50  0001 C CNN
+	1    9100 7150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 6700 9500 6800
+	9100 6900 9100 7000
 Wire Wire Line
-	9900 6700 9900 6800
+	9500 6900 9500 7000
 Wire Wire Line
-	9900 6800 9800 6800
-Connection ~ 9500 6800
+	9500 7000 9400 7000
+Connection ~ 9100 7000
 Wire Wire Line
-	9500 6800 9500 6950
+	9100 7000 9100 7150
 Wire Wire Line
-	9600 6700 9600 6800
-Connection ~ 9600 6800
+	9200 6900 9200 7000
+Connection ~ 9200 7000
 Wire Wire Line
-	9600 6800 9500 6800
+	9200 7000 9100 7000
 Wire Wire Line
-	9700 6700 9700 6800
-Connection ~ 9700 6800
+	9300 6900 9300 7000
+Connection ~ 9300 7000
 Wire Wire Line
-	9700 6800 9600 6800
+	9300 7000 9200 7000
 Wire Wire Line
-	9800 6700 9800 6800
-Connection ~ 9800 6800
+	9400 6900 9400 7000
+Connection ~ 9400 7000
 Wire Wire Line
-	9800 6800 9700 6800
+	9400 7000 9300 7000
 $Comp
 L Device:C_Small C7
 U 1 1 5FF91B12
@@ -236,11 +236,11 @@ Wire Wire Line
 Connection ~ 18800 2150
 Text Notes 19650 1450 0    50   ~ 0
 Bypass Capacitors
-Text GLabel 8400 1350 1    50   Input ~ 0
+Text GLabel 8000 1550 1    50   Input ~ 0
 NRST
-Text GLabel 8800 2900 0    50   Input ~ 0
+Text GLabel 8400 3100 0    50   Input ~ 0
 OSC_IN
-Text GLabel 8800 3000 0    50   Input ~ 0
+Text GLabel 8400 3200 0    50   Input ~ 0
 OSC_OUT
 $Comp
 L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR032
@@ -268,27 +268,27 @@ Text GLabel 22000 3300 2    50   Input ~ 0
 OSC_OUT
 Wire Wire Line
 	20400 3300 20550 3300
-Text GLabel 10600 3900 2    50   Input ~ 0
+Text GLabel 10200 4100 2    50   Input ~ 0
 I2C1_SDA
-Text GLabel 10600 3800 2    50   Input ~ 0
+Text GLabel 10200 4000 2    50   Input ~ 0
 I2C1_SCL
-Text GLabel 10600 3500 2    50   Input ~ 0
+Text GLabel 10200 3700 2    50   Input ~ 0
 SWO
-Text GLabel 10600 2900 2    50   Input ~ 0
+Text GLabel 10200 3100 2    50   Input ~ 0
 SWCLK
-Text GLabel 10600 2800 2    50   Input ~ 0
+Text GLabel 10200 3000 2    50   Input ~ 0
 SWDIO
-Text GLabel 10600 2700 2    50   Input ~ 0
+Text GLabel 10200 2900 2    50   Input ~ 0
 USB_FS_DP
-Text GLabel 10600 2600 2    50   Input ~ 0
+Text GLabel 10200 2800 2    50   Input ~ 0
 USB_FS_DM
-Text GLabel 10600 1500 2    50   Input ~ 0
+Text GLabel 10200 1700 2    50   Input ~ 0
 UART4_TX
-Text GLabel 10600 1600 2    50   Input ~ 0
+Text GLabel 10200 1800 2    50   Input ~ 0
 UART4_RX
-Text GLabel 8800 5400 0    50   Input ~ 0
+Text GLabel 8400 5600 0    50   Input ~ 0
 USART2_TX
-Text GLabel 8800 1700 0    50   Input ~ 0
+Text GLabel 8400 1900 0    50   Input ~ 0
 BOOT0
 $Comp
 L Switch:SW_SPDT SW1
@@ -343,19 +343,19 @@ Wire Wire Line
 $Comp
 L MCU_ST_STM32F4:STM32F407VETx U2
 U 1 1 5FF883FB
-P 9700 3900
-F 0 "U2" H 9700 2350 50  0000 C CNN
-F 1 "STM32F407VETx" H 9700 2250 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 9000 1300 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 9700 3900 50  0001 C CNN
-	1    9700 3900
+P 9300 4100
+F 0 "U2" H 9300 2550 50  0000 C CNN
+F 1 "STM32F407VETx" H 9300 2450 50  0000 C CNN
+F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 8600 1500 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00037051.pdf" H 9300 4100 50  0001 C CNN
+	1    9300 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 1200 10000 1100
+	9600 1400 9600 1300
 Wire Wire Line
-	10000 1100 9900 1100
-Connection ~ 9900 1100
+	9600 1300 9500 1300
+Connection ~ 9500 1300
 Wire Notes Line
 	20050 2600 20050 4050
 Text Notes 18350 2800 0    50   ~ 0
@@ -426,12 +426,12 @@ Wire Wire Line
 $Comp
 L power:+3.3VA #PWR015
 U 1 1 5FFCE8FD
-P 10100 1200
-F 0 "#PWR015" H 10100 1050 50  0001 C CNN
-F 1 "+3.3VA" H 10115 1373 50  0000 C CNN
-F 2 "" H 10100 1200 50  0001 C CNN
-F 3 "" H 10100 1200 50  0001 C CNN
-	1    10100 1200
+P 9700 1400
+F 0 "#PWR015" H 9700 1250 50  0001 C CNN
+F 1 "+3.3VA" H 9715 1573 50  0000 C CNN
+F 2 "" H 9700 1400 50  0001 C CNN
+F 3 "" H 9700 1400 50  0001 C CNN
+	1    9700 1400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -449,27 +449,27 @@ Connection ~ 22100 1750
 $Comp
 L Device:C_Small C5
 U 1 1 5FFE5209
-P 8150 2250
-F 0 "C5" H 8242 2296 50  0000 L CNN
-F 1 "2.2uF" H 8242 2205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8150 2250 50  0001 C CNN
-F 3 "~" H 8150 2250 50  0001 C CNN
-	1    8150 2250
+P 7750 2450
+F 0 "C5" H 7842 2496 50  0000 L CNN
+F 1 "2.2uF" H 7842 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7750 2450 50  0001 C CNN
+F 3 "~" H 7750 2450 50  0001 C CNN
+	1    7750 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8800 2000 8150 2000
+	8400 2200 7750 2200
 Wire Wire Line
-	8150 2000 8150 2150
+	7750 2200 7750 2350
 $Comp
 L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR012
 U 1 1 5FFE867C
-P 8150 2350
-F 0 "#PWR012" H 8150 2100 50  0001 C CNN
-F 1 "GND1" H 8155 2177 50  0000 C CNN
-F 2 "" H 8150 2350 50  0001 C CNN
-F 3 "" H 8150 2350 50  0001 C CNN
-	1    8150 2350
+P 7750 2550
+F 0 "#PWR012" H 7750 2300 50  0001 C CNN
+F 1 "GND1" H 7755 2377 50  0000 C CNN
+F 2 "" H 7750 2550 50  0001 C CNN
+F 3 "" H 7750 2550 50  0001 C CNN
+	1    7750 2550
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -739,23 +739,23 @@ F 3 "~" H 19700 5450 50  0001 C CNN
 	1    19700 5450
 	-1   0    0    1   
 $EndComp
-Text GLabel 10600 2000 2    50   Input ~ 0
+Text GLabel 10200 2200 2    50   Input ~ 0
 SPI_SCLK
-Text GLabel 10600 2100 2    50   Input ~ 0
+Text GLabel 10200 2300 2    50   Input ~ 0
 SPI_MISO
-Text GLabel 10600 2200 2    50   Input ~ 0
+Text GLabel 10200 2400 2    50   Input ~ 0
 SPI_MOSI
-Text GLabel 8800 5100 0    50   Input ~ 0
+Text GLabel 8400 5300 0    50   Input ~ 0
 SDIO_CMD
-Text GLabel 10600 5900 2    50   Input ~ 0
+Text GLabel 10200 6100 2    50   Input ~ 0
 SDIO_D2
-Text GLabel 10600 6000 2    50   Input ~ 0
+Text GLabel 10200 6200 2    50   Input ~ 0
 SDIO_D3
-Text GLabel 10600 6100 2    50   Input ~ 0
+Text GLabel 10200 6300 2    50   Input ~ 0
 SDIO_CK
-Text GLabel 10600 5800 2    50   Input ~ 0
+Text GLabel 10200 6000 2    50   Input ~ 0
 SDIO_D1
-Text GLabel 10600 5700 2    50   Input ~ 0
+Text GLabel 10200 5900 2    50   Input ~ 0
 SDIO_D0
 $Comp
 L Connector:Micro_SD_Card J4
@@ -1048,27 +1048,27 @@ Wire Wire Line
 $Comp
 L Device:C_Small C4
 U 1 1 6014B412
-P 7750 2250
-F 0 "C4" H 7842 2296 50  0000 L CNN
-F 1 "2.2uF" H 7842 2205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7750 2250 50  0001 C CNN
-F 3 "~" H 7750 2250 50  0001 C CNN
-	1    7750 2250
+P 7350 2450
+F 0 "C4" H 7442 2496 50  0000 L CNN
+F 1 "2.2uF" H 7442 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7350 2450 50  0001 C CNN
+F 3 "~" H 7350 2450 50  0001 C CNN
+	1    7350 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8800 1900 7750 1900
+	8400 2100 7350 2100
 Wire Wire Line
-	7750 1900 7750 2150
+	7350 2100 7350 2350
 $Comp
 L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR011
 U 1 1 6014B9CE
-P 7750 2350
-F 0 "#PWR011" H 7750 2100 50  0001 C CNN
-F 1 "GND1" H 7755 2177 50  0000 C CNN
-F 2 "" H 7750 2350 50  0001 C CNN
-F 3 "" H 7750 2350 50  0001 C CNN
-	1    7750 2350
+P 7350 2550
+F 0 "#PWR011" H 7350 2300 50  0001 C CNN
+F 1 "GND1" H 7355 2377 50  0000 C CNN
+F 2 "" H 7350 2550 50  0001 C CNN
+F 3 "" H 7350 2550 50  0001 C CNN
+	1    7350 2550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1251,35 +1251,35 @@ Wire Wire Line
 $Comp
 L Device:C_Small C17
 U 1 1 601A0EEC
-P 8000 1600
-F 0 "C17" H 8092 1646 50  0000 L CNN
-F 1 "100nF" H 8092 1555 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 8000 1600 50  0001 C CNN
-F 3 "~" H 8000 1600 50  0001 C CNN
-	1    8000 1600
+P 7600 1800
+F 0 "C17" H 7692 1846 50  0000 L CNN
+F 1 "100nF" H 7692 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7600 1800 50  0001 C CNN
+F 3 "~" H 7600 1800 50  0001 C CNN
+	1    7600 1800
 	1    0    0    -1  
 $EndComp
 $Comp
 L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR036
 U 1 1 601A17D2
-P 8000 1700
-F 0 "#PWR036" H 8000 1450 50  0001 C CNN
-F 1 "GND1" H 7850 1700 50  0000 C CNN
-F 2 "" H 8000 1700 50  0001 C CNN
-F 3 "" H 8000 1700 50  0001 C CNN
-	1    8000 1700
+P 7600 1900
+F 0 "#PWR036" H 7600 1650 50  0001 C CNN
+F 1 "GND1" H 7450 1900 50  0000 C CNN
+F 2 "" H 7600 1900 50  0001 C CNN
+F 3 "" H 7600 1900 50  0001 C CNN
+	1    7600 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 1500 8400 1500
+	7600 1700 8000 1700
 Wire Wire Line
-	8400 1350 8400 1500
-Connection ~ 8400 1500
+	8000 1550 8000 1700
+Connection ~ 8000 1700
 Wire Wire Line
-	8400 1500 8800 1500
+	8000 1700 8400 1700
 Text GLabel 18050 3400 0    50   Input ~ 0
 BOOT1
-Text GLabel 10600 3400 2    50   Input ~ 0
+Text GLabel 10200 3600 2    50   Input ~ 0
 BOOT1
 $Comp
 L Device:R_Small R7
@@ -1379,17 +1379,17 @@ Wire Wire Line
 Connection ~ 21700 2150
 Wire Wire Line
 	21700 2150 21700 2250
-Text HLabel 8800 2100 0    50   Input ~ 0
+Text HLabel 8400 2300 0    50   Input ~ 0
 VREF+
 Text HLabel 18000 1650 0    50   Input ~ 0
 VREF+
-Text GLabel 10600 3200 2    50   Input ~ 0
+Text GLabel 10200 3400 2    50   Input ~ 0
 T0
-Text GLabel 10600 3300 2    50   Input ~ 0
+Text GLabel 10200 3500 2    50   Input ~ 0
 T1
-Text GLabel 10600 5400 2    50   Input ~ 0
+Text GLabel 10200 5600 2    50   Input ~ 0
 T3
-Text GLabel 10600 5300 2    50   Input ~ 0
+Text GLabel 10200 5500 2    50   Input ~ 0
 T2
 $Comp
 L Device:R_Small R8
@@ -1782,56 +1782,56 @@ Wire Notes Line
 $Comp
 L Device:R_Small R11
 U 1 1 60359B8E
-P 8000 1250
-F 0 "R11" H 8100 1150 50  0000 C CNN
-F 1 "10K" H 8100 1250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8000 1250 50  0001 C CNN
-F 3 "~" H 8000 1250 50  0001 C CNN
-	1    8000 1250
+P 7600 1450
+F 0 "R11" H 7700 1350 50  0000 C CNN
+F 1 "10K" H 7700 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7600 1450 50  0001 C CNN
+F 3 "~" H 7600 1450 50  0001 C CNN
+	1    7600 1450
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8000 1350 8000 1500
-Connection ~ 8000 1500
+	7600 1550 7600 1700
+Connection ~ 7600 1700
 $Comp
 L power:+3V3 #PWR047
 U 1 1 60371FBE
-P 8000 950
-F 0 "#PWR047" H 8000 800 50  0001 C CNN
-F 1 "+3V3" H 8015 1123 50  0000 C CNN
-F 2 "" H 8000 950 50  0001 C CNN
-F 3 "" H 8000 950 50  0001 C CNN
-	1    8000 950 
+P 7600 1150
+F 0 "#PWR047" H 7600 1000 50  0001 C CNN
+F 1 "+3V3" H 7615 1323 50  0000 C CNN
+F 2 "" H 7600 1150 50  0001 C CNN
+F 3 "" H 7600 1150 50  0001 C CNN
+	1    7600 1150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8000 950  8000 1150
+	7600 1150 7600 1350
 $Comp
 L Switch:SW_DIP_x01 SW2
 U 1 1 6037EC8D
-P 7500 1500
-F 0 "SW2" H 7500 1767 50  0000 C CNN
-F 1 "SW_RESET" H 7500 1676 50  0000 C CNN
-F 2 "" H 7500 1500 50  0001 C CNN
-F 3 "~" H 7500 1500 50  0001 C CNN
-	1    7500 1500
+P 7100 1700
+F 0 "SW2" H 7100 1967 50  0000 C CNN
+F 1 "SW_RESET" H 7100 1876 50  0000 C CNN
+F 2 "" H 7100 1700 50  0001 C CNN
+F 3 "~" H 7100 1700 50  0001 C CNN
+	1    7100 1700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 1500 8000 1500
+	7400 1700 7600 1700
 $Comp
 L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR035
 U 1 1 6038ACDA
-P 7200 1700
-F 0 "#PWR035" H 7200 1450 50  0001 C CNN
-F 1 "GND1" H 7050 1700 50  0000 C CNN
-F 2 "" H 7200 1700 50  0001 C CNN
-F 3 "" H 7200 1700 50  0001 C CNN
-	1    7200 1700
+P 6800 1900
+F 0 "#PWR035" H 6800 1650 50  0001 C CNN
+F 1 "GND1" H 6650 1900 50  0000 C CNN
+F 2 "" H 6800 1900 50  0001 C CNN
+F 3 "" H 6800 1900 50  0001 C CNN
+	1    6800 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7200 1700 7200 1500
+	6800 1900 6800 1700
 Wire Notes Line
 	1250 5200 3150 5200
 Wire Notes Line
@@ -2140,9 +2140,9 @@ Wire Wire Line
 Connection ~ 22000 7200
 Wire Wire Line
 	22000 7200 22100 7200
-Text GLabel 10600 1700 2    50   Input ~ 0
+Text GLabel 10200 1900 2    50   Input ~ 0
 TB
-Text GLabel 10600 5200 2    50   Input ~ 0
+Text GLabel 10200 5400 2    50   Input ~ 0
 T_CHAMBER
 $Comp
 L Connector:Conn_01x02_Male J7
@@ -2396,13 +2396,13 @@ Wire Wire Line
 	4700 3600 4700 3500
 Text Notes 3450 4150 0    50   ~ 0
 TLV75533PDBV requires atleast 0.47uF output capacitor
-Text GLabel 10600 4500 2    50   Input ~ 0
+Text GLabel 10200 4700 2    50   Input ~ 0
 SPI2_SCK
-Text GLabel 10600 4600 2    50   Input ~ 0
-SPI2_CS
-Text GLabel 10600 4700 2    50   Input ~ 0
+Text GLabel 10200 4800 2    50   Input ~ 0
+SPI2_CS6
+Text GLabel 10200 4900 2    50   Input ~ 0
 SPI2_MOSI
-Text GLabel 10600 5100 2    50   Input ~ 0
+Text GLabel 10200 5300 2    50   Input ~ 0
 SPI2_MISO
 $Comp
 L Stepper_driver_generic_breakout:Motor_driver_generic_breakout A1
@@ -2528,25 +2528,24 @@ Text GLabel 12650 6850 0    50   Input ~ 0
 USART1_TX
 Wire Wire Line
 	15750 6150 16350 6150
-Text GLabel 8800 4100 0    50   Input ~ 0
+Text GLabel 8400 4300 0    50   Input ~ 0
 PWM_T0
-Text GLabel 8800 4300 0    50   Input ~ 0
+Text GLabel 8400 4500 0    50   Input ~ 0
 PWM_T1
-Text GLabel 8800 4500 0    50   Input ~ 0
+Text GLabel 8400 4700 0    50   Input ~ 0
 PWM_T2
-Text GLabel 8800 4600 0    50   Input ~ 0
+Text GLabel 8400 4800 0    50   Input ~ 0
 PWM_T3
-Text GLabel 8800 6100 0    50   Input ~ 0
+Text GLabel 8400 6300 0    50   Input ~ 0
 SERVO1
-Text GLabel 8800 6200 0    50   Input ~ 0
+Text GLabel 8400 6400 0    50   Input ~ 0
 SERVO2
-Text GLabel 8800 6300 0    50   Input ~ 0
+Text GLabel 8400 6500 0    50   Input ~ 0
 SERVO3
-Text GLabel 8800 6400 0    50   Input ~ 0
+Text GLabel 8400 6600 0    50   Input ~ 0
 SERVO4
-Text GLabel 10600 5500 2    50   Input ~ 0
+Text GLabel 10200 5700 2    50   Input ~ 0
 PWM_BED
-NoConn ~ 10600 5600
 Text GLabel 14250 5850 0    50   Input ~ 0
 1SDO_XT
 Wire Wire Line
@@ -2754,17 +2753,17 @@ Wire Wire Line
 	16350 3050 16350 3400
 Text Notes 14500 1500 0    50   ~ 0
 Limit Switches
-Text GLabel 8800 3300 0    50   Input ~ 0
+Text GLabel 8400 3500 0    50   Input ~ 0
 E_STOP_XMIN
-Text GLabel 8800 3400 0    50   Input ~ 0
+Text GLabel 8400 3600 0    50   Input ~ 0
 E_STOP_XMAX
-Text GLabel 8800 3500 0    50   Input ~ 0
+Text GLabel 8400 3700 0    50   Input ~ 0
 E_STOP_YMIN
-Text GLabel 8800 3600 0    50   Input ~ 0
+Text GLabel 8400 3800 0    50   Input ~ 0
 E_STOP_YMAX
-Text GLabel 8800 3700 0    50   Input ~ 0
+Text GLabel 8400 3900 0    50   Input ~ 0
 E_STOP_ZMIN
-Text GLabel 8800 3800 0    50   Input ~ 0
+Text GLabel 8400 4000 0    50   Input ~ 0
 E_STOP_ZMAX
 Text GLabel 13350 2450 2    50   Input ~ 0
 E_STOP_XMIN
@@ -2862,7 +2861,7 @@ F 3 "" H 15000 9000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 14500 9800 0    50   Input ~ 0
-2DRV-STEP
+2DRV-STP
 Text GLabel 14500 9950 0    50   Input ~ 0
 2DRV-DIR
 Text GLabel 14150 8900 0    50   Input ~ 0
@@ -3048,73 +3047,73 @@ Place VMOT capacitor close to driver.
 $Comp
 L Device:R_Pack03 RN4
 U 1 1 600E6472
-P 15900 7150
-F 0 "RN4" V 15583 7150 50  0000 C CNN
-F 1 "100E" V 15674 7150 50  0000 C CNN
-F 2 "" V 16175 7150 50  0001 C CNN
-F 3 "~" H 15900 7150 50  0001 C CNN
-	1    15900 7150
+P 16450 7200
+F 0 "RN4" V 16133 7200 50  0000 C CNN
+F 1 "100E" V 16224 7200 50  0000 C CNN
+F 2 "" V 16725 7200 50  0001 C CNN
+F 3 "~" H 16450 7200 50  0001 C CNN
+	1    16450 7200
 	0    1    1    0   
 $EndComp
-Text GLabel 16250 7150 2    50   Input ~ 0
+Text GLabel 16800 7200 2    50   Input ~ 0
 1DRV-STP
-Text GLabel 16250 7250 2    50   Input ~ 0
+Text GLabel 16800 7300 2    50   Input ~ 0
 1DRV-DIR
 Wire Wire Line
-	16250 7250 16100 7250
+	16800 7300 16650 7300
 Wire Wire Line
-	16250 7150 16100 7150
-Text GLabel 15550 7150 0    50   Input ~ 0
+	16800 7200 16650 7200
+Text GLabel 16100 7200 0    50   Input ~ 0
 1STP
-Text GLabel 15550 7250 0    50   Input ~ 0
+Text GLabel 16100 7300 0    50   Input ~ 0
 1DIR
 Wire Wire Line
-	15550 7150 15700 7150
+	16100 7200 16250 7200
 Wire Wire Line
-	15550 7250 15700 7250
-Text GLabel 15550 7050 0    50   Input ~ 0
+	16100 7300 16250 7300
+Text GLabel 16100 7100 0    50   Input ~ 0
 1ENBL
 Wire Wire Line
-	15550 7050 15700 7050
-Text GLabel 16250 7050 2    50   Input ~ 0
+	16100 7100 16250 7100
+Text GLabel 16800 7100 2    50   Input ~ 0
 1DRV-EN
 Wire Wire Line
-	16100 7050 16250 7050
+	16650 7100 16800 7100
 $Comp
 L Device:R_Pack03 RN5
 U 1 1 603F0BE6
-P 16200 10750
-F 0 "RN5" V 15883 10750 50  0000 C CNN
-F 1 "100E" V 15974 10750 50  0000 C CNN
-F 2 "" V 16475 10750 50  0001 C CNN
-F 3 "~" H 16200 10750 50  0001 C CNN
-	1    16200 10750
+P 16400 10850
+F 0 "RN5" V 16083 10850 50  0000 C CNN
+F 1 "100E" V 16174 10850 50  0000 C CNN
+F 2 "" V 16675 10850 50  0001 C CNN
+F 3 "~" H 16400 10850 50  0001 C CNN
+	1    16400 10850
 	0    1    1    0   
 $EndComp
-Text GLabel 16550 10750 2    50   Input ~ 0
+Text GLabel 16750 10850 2    50   Input ~ 0
 2DRV-STP
-Text GLabel 16550 10850 2    50   Input ~ 0
+Text GLabel 16750 10950 2    50   Input ~ 0
 2DRV-DIR
 Wire Wire Line
-	16550 10850 16400 10850
+	16750 10950 16600 10950
 Wire Wire Line
-	16550 10750 16400 10750
-Text GLabel 15850 10750 0    50   Input ~ 0
+	16750 10850 16600 10850
+Text GLabel 16050 10850 0    50   Input ~ 0
 2STP
-Text GLabel 15850 10850 0    50   Input ~ 0
+Text GLabel 16050 10950 0    50   Input ~ 0
 2DIR
 Wire Wire Line
-	15850 10750 16000 10750
+	16050 10850 16200 10850
 Wire Wire Line
-	15850 10850 16000 10850
-Text GLabel 15850 10650 0    50   Input ~ 0
+	16050 10950 16200 10950
+Text GLabel 16050 10750 0    50   Input ~ 0
 2ENBL
 Wire Wire Line
-	15850 10650 16000 10650
-Text GLabel 16550 10650 2    50   Input ~ 0
+	16050 10750 16200 10750
+Text GLabel 16750 10750 2    50   Input ~ 0
 2DRV-EN
 Wire Wire Line
-	16400 10650 16550 10650
+	16600 10750 16750 10750
 $Comp
 L Stepper_driver_generic_breakout:Motor_driver_generic_breakout A6
 U 1 1 604600DF
@@ -3127,11 +3126,11 @@ F 3 "" H 15050 12500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 14550 13300 0    50   Input ~ 0
-3DRV-STEP
+3DRV-STP
 Text GLabel 14550 13450 0    50   Input ~ 0
 3DRV-DIR
 Text GLabel 14200 12400 0    50   Input ~ 0
-2DRV-EN
+3DRV-EN
 $Comp
 L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR098
 U 1 1 604610C4
@@ -3313,39 +3312,37 @@ Place VMOT capacitor close to driver.
 $Comp
 L Device:R_Pack03 RN6
 U 1 1 604611A9
-P 16250 14250
-F 0 "RN6" V 15933 14250 50  0000 C CNN
-F 1 "100E" V 16024 14250 50  0000 C CNN
-F 2 "" V 16525 14250 50  0001 C CNN
-F 3 "~" H 16250 14250 50  0001 C CNN
-	1    16250 14250
+P 16400 14250
+F 0 "RN6" V 16083 14250 50  0000 C CNN
+F 1 "100E" V 16174 14250 50  0000 C CNN
+F 2 "" V 16675 14250 50  0001 C CNN
+F 3 "~" H 16400 14250 50  0001 C CNN
+	1    16400 14250
 	0    1    1    0   
 $EndComp
-Text GLabel 16600 14250 2    50   Input ~ 0
+Text GLabel 16750 14250 2    50   Input ~ 0
 3DRV-STP
-Text GLabel 16600 14350 2    50   Input ~ 0
+Text GLabel 16750 14350 2    50   Input ~ 0
 3DRV-DIR
 Wire Wire Line
-	16600 14350 16450 14350
+	16750 14350 16600 14350
 Wire Wire Line
-	16600 14250 16450 14250
-Text GLabel 15900 14250 0    50   Input ~ 0
+	16750 14250 16600 14250
+Text GLabel 16050 14250 0    50   Input ~ 0
 3STP
-Text GLabel 15900 14350 0    50   Input ~ 0
+Text GLabel 16050 14350 0    50   Input ~ 0
 3DIR
 Wire Wire Line
-	15900 14250 16050 14250
+	16050 14250 16200 14250
 Wire Wire Line
-	15900 14350 16050 14350
-Text GLabel 15900 14150 0    50   Input ~ 0
+	16050 14350 16200 14350
+Text GLabel 16050 14150 0    50   Input ~ 0
 3ENBL
 Wire Wire Line
-	15900 14150 16050 14150
-Text GLabel 16600 14150 2    50   Input ~ 0
+	16050 14150 16200 14150
+Text GLabel 16750 14150 2    50   Input ~ 0
 3DRV-EN
-Wire Wire Line
-	16450 14150 16600 14150
-Text Notes 10450 15300 0    100  ~ 0
+Text Notes 6750 15550 0    100  ~ 0
 For stepper drivers, SPI based drivers will use the same SPI2 lines and different CS line for each driver.\nNow RX/TX based drivers like TMC2208, will use single wire UART through the same CS line.\nModify driver according to use PDN pin for UART.\n
 Wire Notes Line
 	1150 14650 22450 14650
@@ -3363,7 +3360,7 @@ F 3 "" H 9350 12550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8850 13350 0    50   Input ~ 0
-4DRV-STEP
+4DRV-STP
 Text GLabel 8850 13500 0    50   Input ~ 0
 4DRV-DIR
 Text GLabel 8500 12450 0    50   Input ~ 0
@@ -3593,7 +3590,7 @@ F 3 "" H 3950 12550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3450 13350 0    50   Input ~ 0
-5DRV-STEP
+5DRV-STP
 Text GLabel 3450 13500 0    50   Input ~ 0
 5DRV-DIR
 Text GLabel 3100 12450 0    50   Input ~ 0
@@ -3819,7 +3816,7 @@ F 3 "" H 3950 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3450 9750 0    50   Input ~ 0
-6DRV-STEP
+6DRV-STP
 Text GLabel 3450 9900 0    50   Input ~ 0
 6DRV-DIR
 Text GLabel 3100 8850 0    50   Input ~ 0
@@ -4165,9 +4162,9 @@ Wire Notes Line
 	1150 7600 1150 14650
 Wire Notes Line
 	6550 7600 6550 14650
-Text GLabel 10600 2400 2    50   Input ~ 0
+Text GLabel 10200 2600 2    50   Input ~ 0
 USART1_TX
-Text GLabel 10600 4200 2    50   Input ~ 0
+Text GLabel 10200 4400 2    50   Input ~ 0
 USART3_TX
 $Comp
 L Device:R_Small R26
@@ -5106,10 +5103,10 @@ $EndComp
 Wire Wire Line
 	14450 6850 14350 6850
 $Comp
-L Stepper_driver_generic_breakout:Motor_driver_generic_breakout A?
+L Stepper_driver_generic_breakout:Motor_driver_generic_breakout A7
 U 1 1 62820504
 P 9350 9250
-F 0 "A?" H 9575 9917 50  0000 C CNN
+F 0 "A7" H 9575 9917 50  0000 C CNN
 F 1 "DRIVER_7" H 9575 9826 50  0000 C CNN
 F 2 "Module:Pololu_Breakout-16_15.2x20.3mm" H 9550 8450 50  0001 L CNN
 F 3 "" H 9450 8950 50  0001 C CNN
@@ -5117,16 +5114,16 @@ F 3 "" H 9450 8950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 8950 9750 0    50   Input ~ 0
-7DRV-STEP
+7DRV-STP
 Text GLabel 8950 9900 0    50   Input ~ 0
 7DRV-DIR
 Text GLabel 8600 8850 0    50   Input ~ 0
 7DRV-EN
 $Comp
-L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR?
+L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR0126
 U 1 1 62821D71
 P 10500 10000
-F 0 "#PWR?" H 10500 9750 50  0001 C CNN
+F 0 "#PWR0126" H 10500 9750 50  0001 C CNN
 F 1 "GND1" H 10505 9827 50  0000 C CNN
 F 2 "" H 10500 10000 50  0001 C CNN
 F 3 "" H 10500 10000 50  0001 C CNN
@@ -5143,10 +5140,10 @@ Wire Wire Line
 	10500 9000 10500 9900
 Connection ~ 10500 9900
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0127
 U 1 1 62821D80
 P 10800 9750
-F 0 "#PWR?" H 10800 9600 50  0001 C CNN
+F 0 "#PWR0127" H 10800 9600 50  0001 C CNN
 F 1 "+3V3" H 10900 9750 50  0000 C CNN
 F 2 "" H 10800 9750 50  0001 C CNN
 F 3 "" H 10800 9750 50  0001 C CNN
@@ -5156,10 +5153,10 @@ $EndComp
 Wire Wire Line
 	8600 8850 8800 8850
 $Comp
-L Device:R_Small R?
+L Device:R_Small R58
 U 1 1 62821D8B
 P 8800 8550
-F 0 "R?" H 8950 8550 50  0000 C CNN
+F 0 "R58" H 8950 8550 50  0000 C CNN
 F 1 "10k" H 8950 8650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 8800 8550 50  0001 C CNN
 F 3 "~" H 8800 8550 50  0001 C CNN
@@ -5172,10 +5169,10 @@ Connection ~ 8800 8850
 Wire Wire Line
 	8800 8850 8950 8850
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0128
 U 1 1 62821D98
 P 8800 8350
-F 0 "#PWR?" H 8800 8200 50  0001 C CNN
+F 0 "#PWR0128" H 8800 8200 50  0001 C CNN
 F 1 "+3V3" H 8815 8523 50  0000 C CNN
 F 2 "" H 8800 8350 50  0001 C CNN
 F 3 "" H 8800 8350 50  0001 C CNN
@@ -5185,10 +5182,10 @@ $EndComp
 Wire Wire Line
 	8800 8350 8800 8450
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J25
 U 1 1 62821DA3
 P 11100 9350
-F 0 "J?" H 11128 9326 50  0000 L CNN
+F 0 "J25" H 11128 9326 50  0000 L CNN
 F 1 "Conn_01x04_Female" H 11128 9235 50  0000 L CNN
 F 2 "" H 11100 9350 50  0001 C CNN
 F 3 "~" H 11100 9350 50  0001 C CNN
@@ -5216,10 +5213,10 @@ Wire Wire Line
 Wire Wire Line
 	10650 9550 10900 9550
 $Comp
-L Jumper:Jumper_3_Open JP?
+L Jumper:Jumper_3_Open JP25
 U 1 1 62821DB7
 P 7700 8300
-F 0 "JP?" H 7700 8524 50  0000 C CNN
+F 0 "JP25" H 7700 8524 50  0000 C CNN
 F 1 "JMX1" H 7700 8433 50  0000 C CNN
 F 2 "" H 7700 8300 50  0001 C CNN
 F 3 "~" H 7700 8300 50  0001 C CNN
@@ -5227,10 +5224,10 @@ F 3 "~" H 7700 8300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_3_Open JP?
+L Jumper:Jumper_3_Open JP26
 U 1 1 62821DC1
 P 7700 9300
-F 0 "JP?" H 7700 9524 50  0000 C CNN
+F 0 "JP26" H 7700 9524 50  0000 C CNN
 F 1 "JMX2" H 7700 9433 50  0000 C CNN
 F 2 "" H 7700 9300 50  0001 C CNN
 F 3 "~" H 7700 9300 50  0001 C CNN
@@ -5238,10 +5235,10 @@ F 3 "~" H 7700 9300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:Jumper_3_Open JP?
+L Jumper:Jumper_3_Open JP27
 U 1 1 62821DCB
 P 7700 10450
-F 0 "JP?" H 7700 10674 50  0000 C CNN
+F 0 "JP27" H 7700 10674 50  0000 C CNN
 F 1 "JMX3" H 7700 10583 50  0000 C CNN
 F 2 "" H 7700 10450 50  0001 C CNN
 F 3 "~" H 7700 10450 50  0001 C CNN
@@ -5273,10 +5270,10 @@ Wire Wire Line
 Wire Wire Line
 	7700 10900 7700 10600
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0129
 U 1 1 62821DE1
 P 8100 8250
-F 0 "#PWR?" H 8100 8100 50  0001 C CNN
+F 0 "#PWR0129" H 8100 8100 50  0001 C CNN
 F 1 "+3V3" H 8115 8423 50  0000 C CNN
 F 2 "" H 8100 8250 50  0001 C CNN
 F 3 "" H 8100 8250 50  0001 C CNN
@@ -5284,10 +5281,10 @@ F 3 "" H 8100 8250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0130
 U 1 1 62821DEB
 P 8100 9250
-F 0 "#PWR?" H 8100 9100 50  0001 C CNN
+F 0 "#PWR0130" H 8100 9100 50  0001 C CNN
 F 1 "+3V3" H 8115 9423 50  0000 C CNN
 F 2 "" H 8100 9250 50  0001 C CNN
 F 3 "" H 8100 9250 50  0001 C CNN
@@ -5295,10 +5292,10 @@ F 3 "" H 8100 9250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0131
 U 1 1 62821DF5
 P 8100 10400
-F 0 "#PWR?" H 8100 10250 50  0001 C CNN
+F 0 "#PWR0131" H 8100 10250 50  0001 C CNN
 F 1 "+3V3" H 8115 10573 50  0000 C CNN
 F 2 "" H 8100 10400 50  0001 C CNN
 F 3 "" H 8100 10400 50  0001 C CNN
@@ -5337,10 +5334,10 @@ Connection ~ 8850 9450
 Wire Wire Line
 	8850 9450 8950 9450
 $Comp
-L Jumper:Jumper_3_Open JP?
+L Jumper:Jumper_3_Open JP28
 U 1 1 62821E0F
 P 9350 10450
-F 0 "JP?" H 9350 10674 50  0000 C CNN
+F 0 "JP28" H 9350 10674 50  0000 C CNN
 F 1 "JMX4" H 9350 10583 50  0000 C CNN
 F 2 "" H 9350 10450 50  0001 C CNN
 F 3 "~" H 9350 10450 50  0001 C CNN
@@ -5354,10 +5351,10 @@ Wire Wire Line
 Wire Wire Line
 	9350 10900 9350 10600
 $Comp
-L power:+3V3 #PWR?
+L power:+3V3 #PWR0132
 U 1 1 62821E1C
 P 9750 10400
-F 0 "#PWR?" H 9750 10250 50  0001 C CNN
+F 0 "#PWR0132" H 9750 10250 50  0001 C CNN
 F 1 "+3V3" H 9765 10573 50  0000 C CNN
 F 2 "" H 9750 10400 50  0001 C CNN
 F 3 "" H 9750 10400 50  0001 C CNN
@@ -5371,10 +5368,10 @@ Wire Wire Line
 Text GLabel 8800 10450 0    50   Input ~ 0
 SPI2_MISO
 $Comp
-L Device:CP_Small C?
+L Device:CP_Small C34
 U 1 1 62821E29
 P 11250 8300
-F 0 "C?" H 11338 8346 50  0000 L CNN
+F 0 "C34" H 11338 8346 50  0000 L CNN
 F 1 "100uF, 65V" H 11338 8255 50  0000 L CNN
 F 2 "" H 11250 8300 50  0001 C CNN
 F 3 "~" H 11250 8300 50  0001 C CNN
@@ -5382,10 +5379,10 @@ F 3 "~" H 11250 8300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0133
 U 1 1 62821E33
 P 11250 8050
-F 0 "#PWR?" H 11250 7900 50  0001 C CNN
+F 0 "#PWR0133" H 11250 7900 50  0001 C CNN
 F 1 "VCC" H 11265 8223 50  0000 C CNN
 F 2 "" H 11250 8050 50  0001 C CNN
 F 3 "" H 11250 8050 50  0001 C CNN
@@ -5393,10 +5390,10 @@ F 3 "" H 11250 8050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR?
+L STM32F4X-rescue:GND1-power-STM32F4X-rescue #PWR0134
 U 1 1 62821E3D
 P 11250 8550
-F 0 "#PWR?" H 11250 8300 50  0001 C CNN
+F 0 "#PWR0134" H 11250 8300 50  0001 C CNN
 F 1 "GND1" H 11255 8377 50  0000 C CNN
 F 2 "" H 11250 8550 50  0001 C CNN
 F 3 "" H 11250 8550 50  0001 C CNN
@@ -5408,10 +5405,10 @@ Wire Wire Line
 Wire Wire Line
 	11250 8400 11250 8550
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0135
 U 1 1 62821E49
 P 10300 8700
-F 0 "#PWR?" H 10300 8550 50  0001 C CNN
+F 0 "#PWR0135" H 10300 8550 50  0001 C CNN
 F 1 "VCC" H 10315 8873 50  0000 C CNN
 F 2 "" H 10300 8700 50  0001 C CNN
 F 3 "" H 10300 8700 50  0001 C CNN
@@ -5425,10 +5422,10 @@ Wire Wire Line
 Text Notes 9750 8100 0    50   ~ 0
 Place VMOT capacitor close to driver.
 $Comp
-L Device:R_Pack03 RN?
+L Device:R_Pack03 RN7
 U 1 1 62821E56
 P 10650 10700
-F 0 "RN?" V 10333 10700 50  0000 C CNN
+F 0 "RN7" V 10333 10700 50  0000 C CNN
 F 1 "100E" V 10424 10700 50  0000 C CNN
 F 2 "" V 10925 10700 50  0001 C CNN
 F 3 "~" H 10650 10700 50  0001 C CNN
@@ -5460,10 +5457,10 @@ Text GLabel 11000 10600 2    50   Input ~ 0
 Wire Wire Line
 	10850 10600 11000 10600
 $Comp
-L Device:R_Small R?
+L Device:R_Small R55
 U 1 1 62821E6C
 P 7350 8300
-F 0 "R?" V 7154 8300 50  0000 C CNN
+F 0 "R55" V 7154 8300 50  0000 C CNN
 F 1 "100E" V 7245 8300 50  0000 C CNN
 F 2 "" H 7350 8300 50  0001 C CNN
 F 3 "~" H 7350 8300 50  0001 C CNN
@@ -5473,10 +5470,10 @@ $EndComp
 Wire Wire Line
 	7150 8300 7250 8300
 $Comp
-L Device:R_Small R?
+L Device:R_Small R56
 U 1 1 62821E77
 P 7350 9300
-F 0 "R?" V 7154 9300 50  0000 C CNN
+F 0 "R56" V 7154 9300 50  0000 C CNN
 F 1 "100E" V 7245 9300 50  0000 C CNN
 F 2 "" H 7350 9300 50  0001 C CNN
 F 3 "~" H 7350 9300 50  0001 C CNN
@@ -5486,10 +5483,10 @@ $EndComp
 Wire Wire Line
 	7250 9300 7150 9300
 $Comp
-L Device:R_Small R?
+L Device:R_Small R59
 U 1 1 62821E82
 P 9000 10450
-F 0 "R?" V 8804 10450 50  0000 C CNN
+F 0 "R59" V 8804 10450 50  0000 C CNN
 F 1 "100E" V 8895 10450 50  0000 C CNN
 F 2 "" H 9000 10450 50  0001 C CNN
 F 3 "~" H 9000 10450 50  0001 C CNN
@@ -5497,10 +5494,10 @@ F 3 "~" H 9000 10450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R57
 U 1 1 62821E8C
 P 7350 10450
-F 0 "R?" V 7154 10450 50  0000 C CNN
+F 0 "R57" V 7154 10450 50  0000 C CNN
 F 1 "100E" V 7245 10450 50  0000 C CNN
 F 2 "" H 7350 10450 50  0001 C CNN
 F 3 "~" H 7350 10450 50  0001 C CNN
@@ -5515,4 +5512,65 @@ Wire Notes Line
 	1150 7600 17600 7600
 Text Notes 1250 1050 0    50   ~ 0
 BLOCK B3: CHECK LDO FUNCTIONALITY. SEARCH ALTERNATIVES.\n
+Text GLabel 8400 6100 0    50   Input ~ 0
+1STP
+Text GLabel 8400 6200 0    50   Input ~ 0
+1DIR
+Text GLabel 8400 6000 0    50   Input ~ 0
+1ENBL
+Text GLabel 8400 3400 0    50   Input ~ 0
+2ENBL
+Text GLabel 10200 4300 2    50   Input ~ 0
+2STP
+Text GLabel 10200 4200 2    50   Input ~ 0
+3STP
+Text GLabel 10200 3900 2    50   Input ~ 0
+4STP
+Text GLabel 10200 3800 2    50   Input ~ 0
+5STP
+Text GLabel 8400 5800 0    50   Input ~ 0
+3ENBL
+Text GLabel 8400 5700 0    50   Input ~ 0
+4ENBL
+Text GLabel 8400 5500 0    50   Input ~ 0
+5DIR
+Text GLabel 8400 5400 0    50   Input ~ 0
+6DIR
+Text GLabel 10200 3200 2    50   Input ~ 0
+6STP
+Text GLabel 10200 2000 2    50   Input ~ 0
+7STP
+Text GLabel 10200 6400 2    50   Input ~ 0
+2DIR
+Text GLabel 10200 6500 2    50   Input ~ 0
+3DIR
+Text GLabel 10200 6600 2    50   Input ~ 0
+4DIR
+Text GLabel 8400 4100 0    50   Input ~ 0
+7DIR
+Text GLabel 8400 5200 0    50   Input ~ 0
+5ENBL
+Text GLabel 8400 5100 0    50   Input ~ 0
+6ENBL
+Text GLabel 10200 2100 2    50   Input ~ 0
+7ENBL
+NoConn ~ 10200 5800
+Text Notes 10650 6000 0    50   ~ 0
+PC7 IS AN EXTRA_PWM\nLEFT UNCONNECTED\nFOR FUTURE.\n
+Text GLabel 10200 4500 2    50   Input ~ 0
+SPI2_CS5
+Text GLabel 10200 4600 2    50   Input ~ 0
+SPI2_CS4
+Text GLabel 8400 5900 0    50   Input ~ 0
+SPI2_CS7
+NoConn ~ 8400 4900
+NoConn ~ 8400 4600
+NoConn ~ 8400 4400
+NoConn ~ 8400 4200
+NoConn ~ 10200 5100
+NoConn ~ 10200 5200
+NoConn ~ 10200 2500
+NoConn ~ 10200 2700
+Wire Wire Line
+	16750 14150 16600 14150
 $EndSCHEMATC
